@@ -2,6 +2,7 @@
 
 DuracionDisco=0.00
 CantidadCanciones=0
+Canciones=[]
 
 print("***************************")
 print("Ingrese el nombre del Disco")
@@ -16,6 +17,7 @@ while respuesta == "s" or respuesta== "S":
     print("Ingrese nombre de la cancion")
     print("****************************")
     nombreCancion=input()
+    Canciones.append(nombreCancion)
     CantidadCanciones+=1
     if nombreCancion !="":
         print("******************************")
@@ -30,6 +32,7 @@ while respuesta == "s" or respuesta== "S":
     respuesta=input()
 else:
     print("El nombre del Disco es: ",nombreDisco)
+    print("Las canciones que ingreso son: ",Canciones)
     print("La cantidad de las canciones es de: ", CantidadCanciones)
     print("El tiempo total del Disco es de: ",DuracionDisco)
     print("Gracias por utilizar mi App <3 !!")
